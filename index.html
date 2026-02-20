@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Be My Valentine?</title>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #ffb6d9, #ffcee6);
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.35);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        color: #d63384;
+        margin-bottom: 20px;
+    }
+
+    .gif-container img {
+        width: 230px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+        position: relative;
+    }
+
+    button {
+        padding: 15px 35px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.2s;
+        background: #ffdde9;
+        color: #d63384;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+        background: #ffd1e3;
+    }
+
+    #noBtn {
+        position: absolute;
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: fixed;
+        bottom: -10px;
+        color: #ff4d88;
+        font-size: 20px;
+        animation: floatUp 4s linear infinite;
+        opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+        0% { transform: translateY(0) translateX(0); opacity: 1; }
